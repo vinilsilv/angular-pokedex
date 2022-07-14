@@ -1,5 +1,17 @@
 <header>
     <a [routerLink]="['']">
-        <img src="assets/logo.svg" alt="Logo Pokedex">
+        <img src="assets/pokedex.png" alt="Logo Pokedex">
+        <h1>Pokedex</h1>
     </a>
+
+    <div class="dark-light-mode" (click)="toggle()">
+        <ng-template [ngIf]="icon == 'Moon'" [ngIfElse]="sunIcon" >
+            <fa-icon class="dark-mode-icon" [icon]="faMoon"></fa-icon>
+        </ng-template>
+
+        <ng-template #sunIcon>
+            <fa-icon [icon]="faSun"></fa-icon>
+        </ng-template>
+
+    </div>
 </header>

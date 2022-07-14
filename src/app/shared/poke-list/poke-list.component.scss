@@ -13,7 +13,7 @@ $padding: rem-calc(20);
         .pokemon {
             position: relative;
             display: flex;
-            background: var(--branco);
+            background: var(--pokemon-card);
 
             width: calc(49% - 2.5rem);
             height: rem-calc(157 - 40);
@@ -24,7 +24,7 @@ $padding: rem-calc(20);
             border-radius: rem-calc(10);
 
             text-decoration: none;
-            color: var(--primary-color);
+            color: var(--card-text);
 
             &__status {
                 h2 {

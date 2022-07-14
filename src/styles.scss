@@ -3,10 +3,21 @@
 @import './config-scss/rem-calc.scss';
 @import './config-scss/btn.scss';
 @import './config-scss/animation.scss';
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 
 html {
 	font-family: 'Roboto', sans-serif;
+}
+
+body {
 	background: var(--primary-color);
+
+	&.dark-theme {
+		--primary-color: #262835;
+		--pokemon-card: #fff;
+
+		--detail-headings: #fff;
+	}
 }
 
 main {

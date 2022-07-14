@@ -13,9 +13,10 @@
 			height: 75px;
 
 			padding: 0 rem-calc(30);
+			
+			color: var(--detail-headings);
 
 			h1 {
-				color: var(--branco);
 				font-size: rem-calc(32);
 				text-transform: capitalize;
 			}
@@ -25,7 +26,7 @@
 				font-weight: 100;
 				top: 0;
 				font-size: rem-calc(60);
-				color: rgba(255, 255, 255, 0.1);
+				opacity: 50%;
 			}
 
 			h1,

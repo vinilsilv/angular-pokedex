@@ -5,6 +5,44 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         padding: rem-calc(40) 0;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+
+            img {
+            max-height: 80px;
+            margin-right: 20px;
+            }
+
+            h1 {
+                color: var(--detail-headings);
+                font-size: 4.5rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                font-style: italic;
+            }
+        }
+
+        .dark-light-mode {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            font-size: 25px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 60%;
+                transition: .2s;
+            }
+        }
     }
+}
+
+.dark-mode-icon {
+    color: #fff;
 }
